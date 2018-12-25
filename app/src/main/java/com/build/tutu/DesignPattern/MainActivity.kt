@@ -7,6 +7,7 @@ import android.view.View
 import com.build.tutu.DesignPattern.DecoratePattern.DecorateActivity
 import com.build.tutu.DesignPattern.FactoryPattern.FactoryActivity
 import com.build.tutu.DesignPattern.ObservePattern.BulletinActivity
+import com.build.tutu.DesignPattern.SinglePattern.SingleActivity
 import com.build.tutu.DesignPattern.TacticsPattern.TacticsModelActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         mObserver.setOnClickListener(this)
         mDecorate.setOnClickListener(this)
         mFactory.setOnClickListener(this)
+        mSingle.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -35,6 +37,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             mDecorate -> navigation(DecorateActivity::class.java)
             // 工厂模式
             mFactory -> navigation(FactoryActivity::class.java)
+            // 单例模式
+            mSingle -> navigation(SingleActivity::class.java)
 
         }
     }
