@@ -5,6 +5,10 @@ import android.support.v7.app.AppCompatActivity
 import com.build.tutu.DesignPattern.DecoratePattern.base_type.Espresso
 import com.build.tutu.DesignPattern.R
 
+/**
+ * 装饰模式
+ * 层层包装数据
+ */
 class DecorateActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

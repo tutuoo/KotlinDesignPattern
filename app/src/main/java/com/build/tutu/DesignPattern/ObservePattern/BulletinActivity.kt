@@ -4,6 +4,10 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.build.tutu.DesignPattern.R
 
+/**
+ * 观察者模式
+ * 可以自由添加和删除观察者,让信息及时更新时通知到各个观察者
+ */
 class BulletinActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

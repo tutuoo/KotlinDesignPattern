@@ -35,6 +35,9 @@
         <activity
             android:name=".SinglePattern.SingleActivity"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CommandPattern.CommandActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

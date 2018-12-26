@@ -4,6 +4,10 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.build.tutu.DesignPattern.R
 
+/**
+ * 单例模式
+ * 唯一实例,不可多次创建
+ */
 class SingleActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

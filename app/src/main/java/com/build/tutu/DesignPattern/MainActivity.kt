@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import com.build.tutu.DesignPattern.CommandPattern.CommandActivity
 import com.build.tutu.DesignPattern.DecoratePattern.DecorateActivity
 import com.build.tutu.DesignPattern.FactoryPattern.FactoryActivity
 import com.build.tutu.DesignPattern.ObservePattern.BulletinActivity
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         mDecorate.setOnClickListener(this)
         mFactory.setOnClickListener(this)
         mSingle.setOnClickListener(this)
+        mCommand.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -39,6 +41,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             mFactory -> navigation(FactoryActivity::class.java)
             // 单例模式
             mSingle -> navigation(SingleActivity::class.java)
+            // 命令行模式
+            mCommand -> navigation(CommandActivity::class.java)
 
         }
     }

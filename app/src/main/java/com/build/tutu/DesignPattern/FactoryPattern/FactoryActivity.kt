@@ -7,6 +7,10 @@ import com.build.tutu.DesignPattern.FactoryPattern.Shop.SimpleCakeFactory
 import com.build.tutu.DesignPattern.FactoryPattern.Shop.TutuCakeFactory
 import com.build.tutu.DesignPattern.R
 
+/**
+ * 工厂模式
+ * 大批量创建类似对象的时候可以考虑
+ */
 class FactoryActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,9 +21,9 @@ class FactoryActivity : AppCompatActivity() {
         // 这里的蛋糕可以定义常量/枚举 这样不容易写错.
 
         val simpleShop = CakeShop(cakeFactory = SimpleCakeFactory())
-        val chocolate = simpleShop.orderCake(com.build.tutu.DesignPattern.FactoryPattern.CakeEnum.Chocolate.name)
+        val chocolate = simpleShop.orderCake(CakeEnum.Chocolate.name)
         println("Chocolate name: ${chocolate?.name}")
-        val strawberry = simpleShop.orderCake(com.build.tutu.DesignPattern.FactoryPattern.CakeEnum.Strawberry.name)
+        val strawberry = simpleShop.orderCake(CakeEnum.Strawberry.name)
         println("Strawberry name: ${strawberry?.name}")
 
         println("----------------------------------------")
