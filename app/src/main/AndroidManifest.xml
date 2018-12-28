@@ -38,6 +38,12 @@
         <activity
             android:name=".CommandPattern.CommandActivity"
             android:screenOrientation="portrait"/>
-    </application>
+        <activity
+            android:name=".AdapterPattern.AdapterActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".FacadePattern.FacadeActivity"
+            android:screenOrientation="portrait"/>
 
+    </application>
 </manifest>
